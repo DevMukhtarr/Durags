@@ -8,7 +8,6 @@ head
   meta(name='description' content='')
   meta(name='keywords' content='')
   meta(name='author' content='')
-  //- link(rel='stylesheet' href='https://unpkg.com/tailwindcss/dist/tailwind.min.css')
   link(rel="stylesheet", href="/tailwind.css")
   link(rel="stylesheet", href="/slides.css")
   // Replace with your tailwind.css once created
@@ -68,6 +67,9 @@ section.bg-gray-100.py-8
     //- 
     //- 
     //- 
+    div.buy
+      img(src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/I/S/61262_1570786990.jpg")
+      a.p-3.bg-green-500.rounded(href="/buy") Buy
   div#slideshow.rounded
     div
       img(src='//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg')
@@ -133,7 +135,7 @@ footer.bg-white
 //
   jQuery if you need it
 //- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-//- script(src="/public/public_js/slide.js") 
+script(src="/slide.js") 
 script.
   var scrollpos = window.scrollY;
   var header = document.getElementById("header");
